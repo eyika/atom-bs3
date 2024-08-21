@@ -12,10 +12,11 @@ return [
      * This will determine if the engine will work in fast mode or debug mode
      * 
      * options are: 0: auto, 1: slow, 2: fast, 5: debug
+     * (optional) 1=forced (test),2=run fast (production), 0=automatic, default value.
      * 
      * A reasonable default has been set
      */
-    'mode' => env('VIEW_MODE'),
+    'mode' => env('VIEW_MODE', 5),
 
     /*
     |--------------------------------------------------------------------------
